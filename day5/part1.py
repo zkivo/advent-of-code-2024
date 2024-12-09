@@ -1,8 +1,3 @@
-import sys
-
-def adjust(numbers):
-    if len(numbers) == 1 : return
-
 # Read the input from the file
 with open('input.txt', 'r') as file:
     lines = file.readlines()
@@ -35,18 +30,6 @@ for line in lines[last_lines_start:]:
     if not fail:
         print(numbers)
         middles.append(numbers[len(numbers) // 2])
-
-    # Create a new list and call adjust for each number
-    # adjusted_list = []
-    # for number in numbers:
-    #     if len(adjusted_list) == 0:
-    #         adjusted_list.append(number)
-    #         continue
-    #     filtered_order = [row for row in order_matrix if row[1] == number]
-    #     prevs = filtered_order[:, 0] # [row[0] for row in filtered_order] 
-    
-    # print middle number of adjusted list
-    # middles.append(len(adjusted_list) // 2)
 
 # sum of all middle numbers
 print(sum(middles))

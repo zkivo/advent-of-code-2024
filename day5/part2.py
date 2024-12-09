@@ -1,8 +1,3 @@
-import sys
-
-def adjust(numbers):
-    if len(numbers) == 1 : return
-
 # Read the input from the file
 with open('input.txt', 'r') as file:
     lines = file.readlines()
